@@ -1,0 +1,109 @@
+/*網站名*/
+.cn_title_border {
+    border-style: solid;
+    border-color: orange;
+    height: 75vh;
+    border-width: 5px;
+}
+
+/*受訪者一覽*/
+.cn_img_hover {
+    opacity: 0.7;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+}
+
+.cn_img_border {
+    border-style: solid;
+    border-color: orange;
+    height: 70vh;
+    border-width: 1.5px;
+}
+
+.cn_img_border:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.cn_img_border:hover .cn_img_hover{
+    opacity: 1;
+    height: 35vh;
+    width: 35vh;
+}
+
+.cn_img_center {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.cn_img_word {
+    padding-top: 10vh;
+    text-align: center;
+    color: black;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.cn_img_word2 {
+    padding-top: -2vh;
+    text-align: center;
+    color: gray;
+    font-size: 3vh;
+}
+
+.cn_frontbutton{
+    border-style: solid;
+    border-width: 3vh 3vh 3vh 0;
+    border-color: transparent orange transparent transparent;
+    margin-left: 52vw;
+}
+.cn_frontbutton:hover{
+    border-color: transparent #fec007 transparent transparent;
+}
+.cn_nextbutton{
+    border-style: solid;
+    border-width: 3vh 0 3vh 3vh;
+    border-color: transparent transparent transparent orange;
+}
+.cn_nextbutton:hover{
+    border-color: transparent transparent transparent #fec007;
+}
+/*受訪者橫向卷軸*/
+.cn_img_detail {
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+}
+
+.cn_detail_title {
+    color: black;
+    padding-top: 20vh;
+    font-size: 7vh;
+    padding-left: 5vw;
+    font-weight: bold;
+}
+
+.cn_detail_word {
+    color: black;
+    font-size: 3vh;
+    line-height: 5vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.cn_detail_button {
+    font-weight: bold;
+}
+
+.spot {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, orange 0);
+    background-position: 0;
+    background-size: 200%;
+    transition: all .8s;
+    font-weight: 400;
+}
+
+.spotted {
+    background-position: -100%;
+}

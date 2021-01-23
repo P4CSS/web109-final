@@ -1,0 +1,295 @@
+/*這是單行註解*/
+
+/* 如嫻 */
+.text {
+    color: #3C3C3C;
+    font-size: large;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.textp2 {
+    color: #191e29;
+    font-size: large;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.text11 {
+    color: beige;
+    font-size: large;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+
+}
+
+.ending {
+    color: #DCDCDC;
+    font-size: large;
+    line-height: 32px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 45%;
+}
+
+/* 如嫻 */
+
+/* 開場字動畫 */
+/* h1 {
+  animation: typing 4s steps(35);
+  overflow: hidden;
+  animation-iteration-count: 3;
+  font-size: 30px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid #ffffff;
+  width: 36ch;
+  color: #ffffff;
+  margin-top: 20%;
+  margin-left: 1%;
+}*/
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 35ch;
+  }
+}
+/* 開場字的動畫結束 */
+
+[class*="col-"] {
+    /* For mobile: */
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    ... .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+
+/*Part3 圖片自動適應寬度*/
+.box {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.img-box {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.img-box img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    z-index: -1;
+    *zoom: 1;
+}
+
+.img-box:before {
+    content: "";
+    display: inline-block;
+    padding-bottom: 100%;
+    width: 0.1px;
+    /*必須要有數值，否則無法把高度撐起來*/
+    vertical-align: middle;
+}
+
+/*Part3 動畫用*/
+// body { cursor: ns-resize }
+.intro-section {
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    --scroll-length: 1.5;
+    height: calc(var(--scroll-length) * 100vh);
+    width: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    .content .subheading,
+    .content .paragraph {
+        opacity: 1;
+        opacity: calc(1 + var(--viewport-y));
+    }
+
+}
+
+.figure {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    > img {
+        // 🥕
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 35em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+    padding: 2em;
+}
+    * {
+        text-shadow: 0 0 4vmin rgba(black, 0.25);
+    }
+
+
+.header {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.paragraph {
+    grid-row: 3 / 5;
+    font-size: large;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+    color: white;
+    background-color: rgba(79,61,50,0.5);
+}
+
+
+.heading {
+    font-size: 2.75em;
+    margin: 0;
+}
+
+.subheading {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.figure {
+    --scale: calc(.8 + (.2 * var(--scroll-length) * var(--visible-y)));
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    will-change: transform;
+    transform: scale(var(--scale));
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(black, 1);
+        opacity: calc(var(--visible-y));
+    }
+
+    > img {
+        display: block;
+        will-change: transform;
+        transform: scale(calc(1 / var(--scale)));
+    }
+}
+
+/* ---------------------------------- */
+
+.char {
+    display: inline-block;
+    opacity: calc(1 + ((var(--viewport-y) * 1.5) - var(--char-percent)));
+}
+
+
+*,
+*:before,
+*:after {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.heading,
+.intro-heading {
+    font-weight: 700;
+}
+
+
+/* Part3 動畫用結束 */
+
+
+/* footer */
+.footer {
+    background-color: #282628;
+    position: absolute;
+    height: auto;
+    )

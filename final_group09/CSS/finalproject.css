@@ -1,0 +1,97 @@
+
+#list-example {
+    top: 0px;
+    right: 0px;
+    width: 50px;
+}
+
+#list-example a {
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow-wrap: break-word;
+    border: none;
+}
+
+h1.opchange {
+  font-family: Droid Sans;
+  font-size: 90px;
+  padding-left: 0px;
+}
+
+
+#list-example a.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+a.list-group-item.list-group-item-action.active {
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  background-color: #A3A4AF;
+  text-align: center;
+}
+
+a.list-group-item.list-group-item-action {
+  color: #FFFFFF;
+  background-color: #1E1D1F;
+}
+
+.stage {
+    border-bottom: 2px;
+    display: flex;
+    height: 330px;
+    width: 100%;
+}
+
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f00;
+    border-bottom: 0px solid #f00;
+}
+
+.bounce-3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.spot {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, #54749f 0);
+    background-position: 0;
+    background-size: 200%;
+    transition: all .8s;
+    font-weight: 400;
+    color: white;
+}
+
+.spotted {
+    background-position: -100%;
+}

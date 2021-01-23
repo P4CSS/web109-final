@@ -1,0 +1,1088 @@
+/*nav*/
+#nav{
+    right: 0px;
+    width: 6vh;
+    padding-right: 0%;
+    z-index: 100;
+    transform: translateY(-50%)；
+}
+
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#nav a {
+    height: 25vh;
+    width:5vw;
+    background-color: #d45731;
+    overflow-wrap:break-word;
+    color: white;
+    opacity: 0.8;
+}
+
+.list-group-item {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    position: relative;
+    display: block;
+    padding-top: 0.75rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    margin-bottom: -1px;
+    text-align: inherit;
+    font-size: 21px;
+    font-family: 微軟正黑體；
+}
+
+/* 橫向捲軸 */
+.step_pic{
+	width: 100%;
+}
+
+.step_img{
+	width: 50vw;
+}
+
+.step_title{
+	margin-top: 30vh;
+	width: 50vw;
+	color: #004e66;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.step_content{
+	margin-top: 2rem;
+	width: 30vw;
+	font-size: larger;
+	line-height: 2.5rem;
+	color: #555555;
+}
+
+/*<!-- 封面banner -->*/
+.banner{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+video {
+	background-color: #000000;
+	object-fit: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	opacity: 0.7;
+}
+
+.title{
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    z-index: 100;
+    color: #000000;
+    text-align: center;
+    font-size: 72px;
+	font-family: 微軟正黑體;
+	font-weight: 900;
+}
+
+.subtitle{
+	width: 100%;
+	padding-top: 240px;
+    max-width: 1200px;
+    position: absolute;
+    z-index: 100;
+    color: #000000;
+    text-align: center;
+    font-size: 36px;
+    font-family: 微軟正黑體;
+}
+
+
+
+/*<!-- 段落1:「發票歷史沿革」 -->*/
+
+.first-part{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	background-color: #1e1e1e;
+	background-image: url("https://img.technews.tw/wp-content/uploads/2019/04/09170302/下載2.jpg");
+	background-size: 100% 100%;
+	z-index: 0;
+}
+
+
+/*<!-- 大標及開頭前言 -->*/
+.first-part-title-backgroundcolor{
+	position: absolute;
+	width: 700px;
+	height: 350px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #004e66;
+    opacity: 0.8;
+}
+
+
+
+.first-part-title{
+	font-family: 微軟正黑體;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+    font-size: 55px;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%,-33%);
+
+}
+
+.first-part-title-1{
+	font-family: 微軟正黑體;
+	color: yellow;
+	text-align: center;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%,-48%);
+}
+
+.first-part-title-2{
+	font-family: 微軟正黑體;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	width: 650px;
+	top: 59%;
+	left: 50%;
+	transform: translate(-50%,-59%);
+}
+
+
+/*<!-- 沿革六階段(第一階段) -->*/
+.step{
+	height: 3750px;
+	width: 100vw;
+	background-color: #FDFBEE;
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+.step-background-image{
+	height: 3750px;
+	width: 100vw;
+	position: absolute;
+	background-color: #FDFBEE;
+	opacity: 0.3;
+}
+
+.step-navigation{
+	height: 3650px;
+	width: 20px;
+	background-color: #004e66;
+	position: absolute;
+	top: 40px;
+	left: 630px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    opacity: 0.8;
+
+}
+
+.step1-navigation-point{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 215px;
+	left: 615px;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+}
+
+.step1-title-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	top: 40px;
+	left: 25px;
+	border-radius: 10px;
+	height: 390px;
+	width: 560px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+ .step1-title-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+
+.step1-title{
+	font-size: 27px;
+	color: #004e66;
+	position: relative;
+	top: 10px;
+	left: 45px;
+}
+
+.step1-title-1{
+	font-size: 17px;
+	color: #1f1f1f;
+	position: relative;
+	top: 5px;
+	left: 45px;
+}
+
+.step1-content{
+	font-size: 17px;
+	color: #3D3D3D;
+	position: relative;
+	width: 500px;
+	top: 16px;
+	left: 45px;
+}
+
+
+/**<!-- 沿革六階段(第二階段) -->*/
+.step2-title-backgroundcolor{
+	background-color: white;
+	color: #fff;
+	position: absolute;
+	top: 440px;
+	left: 680px;
+	border-radius: 10px;
+	height: 470px;
+	width: 500px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+ 
+ .step2-title-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.step2-navigation-point{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 650px;
+	left: 615px;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+}
+
+.step2-title{
+	font-size: 27px;
+	position: relative;
+	color: #004e66;
+	left: 700px;
+}
+
+.step2-title-1{
+	font-size: 17px;
+	position: relative;
+	color: #1f1f1f;
+	left: 700px;
+}
+
+.step2-content{
+	font-size: 17px;
+	position: relative;
+	color: #3D3D3D;
+	width: 460px;
+	left: 700px;
+}
+
+/*<!-- 沿革六階段(第三階段) -->*/
+.step3-title-backgroundcolor{
+	color: #fff;
+	background-color: white;
+	position: absolute;
+	top: 970px;
+	left: 25px;
+	border-radius: 10px;
+	height: 540px;
+	width: 580px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+ .step3-title-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.step3-navigation-point{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 1200px;
+	left: 615px;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+}
+
+.step3-title{
+	font-size: 27px;
+	color: #004e66;
+	position: relative;
+	left: 45px;
+}
+
+.step3-title-1{
+	font-size: 17px;
+	color: #1f1f1f;
+	position: relative;
+	left: 45px;
+}
+
+.step3-content{
+	font-size: 17px;
+	color: #3D3D3D;
+	position: relative;
+	top: 16px;
+	width: 500px;
+	left: 45px;
+}
+
+/**<!-- 沿革六階段(第四階段) -->*/
+.step4-title-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	top: 1520px;
+	left: 680px;
+	border-radius: 10px;
+	height: 630px;
+	width: 500px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+ .step4-title-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.step4-navigation-point{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 1800px;
+	left: 615px;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+}
+
+.step4-title{
+	font-size: 27px;
+	color: #004e66;
+	top: -20px;
+	position: relative;
+	left: 700px;
+}
+
+.step4-title-1{
+	top: -20px;
+	font-size: 17px;
+	color: #1f1f1f;
+	position: relative;
+	left: 700px;
+}
+
+.step4-content{
+	font-size: 17px;
+	top: 16px;
+	color: #3D3D3D;
+	position: relative;
+	top: -10px;
+	width: 460px;
+	left: 700px;
+}
+
+/*<!-- 沿革六階段(第五階段) -->*/
+.step5-title-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	top: 2122px;
+	left: 25px;
+	border-radius: 10px;
+	height: 520px;
+	width: 560px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+ .step5-title-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.step5-navigation-point{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 2350px;
+	left: 615px;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+}
+
+.step5-title{
+	top: -80px;
+	font-size: 27px;
+	color: #004e66;
+	position: relative;
+	left: 45px;
+}
+
+.step5-title-1{
+	top: -80px;
+	font-size: 17px;
+	color: #1f1f1f;
+	position: relative;
+	left: 45px;
+}
+
+.step5-content{
+	top: -70px;
+	font-size: 17px;
+	color: #3D3D3D;
+	position: relative;
+	width: 500px;
+	left: 45px;
+}
+
+/**<!-- 沿革六階段(第六階段) -->*/
+.step6-title-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	top: 2680px;
+	left: 680px;
+	border-radius: 10px;
+	height: 1000px;
+	width: 500px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+ .step6-title-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.step6-navigation-point{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 3100px;
+	left: 615px;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+}
+
+.step6-title{
+	top: -60px;
+	font-size: 27px;
+	color: #004e66;
+	position: relative;
+	left: 700px;
+}
+
+.step6-title-1{
+	top: -65px;
+	font-size: 17px;
+	color: #1f1f1f;
+	position: relative;
+	left: 700px;
+}
+
+.step6-content{
+	top: -55px;
+	font-size: 17px;
+	color: #3D3D3D;
+	position: relative;
+	width: 460px;
+	left: 700px;
+}
+
+
+
+
+
+
+
+
+/*<!-- 段落2:「發票載具使用簡介」（橫向捲軸） -->*/
+.second-part{
+	height: 1000vh;
+	width: 100vw;
+	top: 0px;
+	right: 0px;
+	position: relative;
+	text-align: center;
+	line-height: 730px;
+}
+
+
+
+
+
+
+/*<!-- 原先被蓋掉的：段落3 -->*/
+.third-part{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+
+}
+
+
+/*<!-- 段落3:「為什麼要推動發票無紙化？」 -->*/
+.third-part{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	background-image: url("https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2020/11/25/1/9137629.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600");
+	background-size: 100% 100%;
+
+}
+
+/*<!-- 大標及開頭前言 -->*/
+.third-part-title-backgroundcolor{
+	position: absolute;
+	width: 750px;
+	height: 280px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #004e66;
+    opacity: 0.8;
+}
+
+.third-part-title{
+	font-family: 微軟正黑體;
+ 	color: #fff;
+	text-align: center;
+	position: absolute;
+    font-size: 50px;
+    top: 33%;
+	left: 50%;
+	transform: translate(-50%,-33%);
+
+
+}
+
+
+.third-part-title-1{
+	font-family: 微軟正黑體;
+	color: yellow;
+	text-align: center;
+	position: absolute;
+	font-size: 28px;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%,-48%);
+}
+
+
+.third-part-title-2{
+	font-family: 微軟正黑體;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	font-size: 20px;
+	width: 650px;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%,-59%);
+}
+
+
+/*<!-- 段落3-1：發票無紙化對政府的意義 -->*/
+
+.third-part-1{
+	background-color: #FDFBEE;
+	height: 1300px;
+	width: 100vw;
+	border-bottom: 3px solid #fff;
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+.government-backgroundcolor{
+	background-color: #004e66;
+	position: absolute;
+	width: 230px;
+	height: 300px;
+	top: 50px;
+	left: 40px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    opacity: 0.7;
+}
+
+
+.government{
+    font-size: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+}
+
+.government-title{
+	position: relative;
+	left: 45px;
+}
+
+.government-point1-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 130px;
+	top: 400px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.government-point1-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.government-point1-title{
+	color: #1F1F1F;
+	position: relative;
+	font-size: 20px;
+	width: 750px;
+	top: -20px;
+	left: 400px;
+}
+
+.government-point1-content{
+	position: relative;
+	color: #3D3D3D;
+	width: 750px;
+	top: -20px;
+	left: 400px;
+}
+
+.government-point2-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 295px;
+	top: 547px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.government-point2-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+
+.government-point2-title{
+	font-size: 20px;
+	top: -20px;
+	color: #1F1F1F;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.government-point2-content{
+	top: -20px;
+	color: #3D3D3D;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+.government-point3-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 370px;
+	top: 860px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.government-point3-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.government-point3-title{
+	font-size: 20px;
+	top: -20px;
+	position: relative;
+	color: #1F1F1F;
+	width: 750px;
+	left: 400px;
+}
+
+.government-point3-content{
+	top: -20px;
+	color: #3D3D3D;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+
+
+/*<!-- 段落3-2：發票無紙化對消費者的意義 -->*/
+
+.third-part-2{
+	height: 800px;
+	width: 100vw;
+	background-color: #FDFBEE;
+	border-bottom: 3px solid #fff;
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+
+.consumer-backgroundcolor{
+	background-color: #004e66;
+	position: absolute;
+	width: 310px;
+	height: 295px;
+	top: 50px;
+	left: 45px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    opacity: 0.7;
+}
+
+.consumer{
+    font-size: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+}
+
+.consumer-title{
+	position: relative;
+	left: 45px;
+}
+
+.consumer-point1-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 140px;
+	top: 395px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.consumer-point1-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.consumer-point1-title{
+	font-size: 20px;
+	top: -20px;
+	color: #1F1F1F;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.consumer-point1-content{
+	top: -20px;
+	color: #3D3D3D;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+.consumer-point2-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 130px;
+	top: 550px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.consumer-point2-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.consumer-point2-title{
+	font-size: 20px;
+	top: -10px;
+	color: #1F1F1F;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.consumer-point2-content{
+	color: #3D3D3D;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+.consumer-point3-title{
+	font-size: 20px;
+	top: -20px;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.consumer-point3-content{
+	top: -20px;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+
+/*<!-- 段落3-3：發票無紙化對商家的意義 -->*/
+
+.third-part-3{
+	background-color: #FDFBEE;
+	height: 800px;
+	width: 100vw;
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+
+.seller-backgroundcolor{
+	background-color: #004e66;
+	position: absolute;
+	width: 230px;
+	height: 295px;
+	top: 50px;
+	left: 45px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    opacity: 0.7;
+}
+
+.seller{
+    font-size: 100px;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: white;
+}
+
+.seller-title{
+	position: relative;
+	left: 45px;
+}
+
+.seller-point1-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 120px;
+	top: 395px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.seller-point1-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.seller-point1-title{
+	font-size: 20px;
+	top: -20px;
+	color: #1F1F1F;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.seller-point1-content{
+	top: -20px;
+	color: #3D3D3D;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+.seller-point2-backgroundcolor{
+	background-color: white;
+	position: absolute;
+	width: 800px;
+	height: 140px;
+	top: 535px;
+	left: 370px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.seller-point2-backgroundcolor:hover{
+ 	transform: scale(1.05,1.05);
+ 	transition: 0.3s;
+ 	background-color: #FCE883;
+ }
+
+.seller-point2-title{
+	font-size: 20px;
+	top: -5px;
+	color: #1F1F1F;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.seller-point2-content{
+	top: -10px;
+	color: #3D3D3D;
+	position: relative;
+	width: 750px;
+	top: -5px;
+	left: 400px;
+}
+
+.seller-point3-title{
+	font-size: 20px;
+	top: -20px;
+	position: relative;
+	width: 750px;
+	left: 400px;
+}
+
+.government-point3-content{
+	top: -20px;
+	position: relative;
+	width: 750px;
+	top: -15px;
+	left: 400px;
+}
+
+
+/*<!-- 段落4:資料圖表 -->*/
+.forth-part{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+.forth-part img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+
+}
+
+.forth-part-title-backgroundcolor{
+	position: absolute;
+	width: 750px;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #004e66;
+    opacity: 0.8;
+}
+
+.forth-part-title{
+	font-family: 微軟正黑體;
+ 	color: #fff;
+	text-align: center;
+	position: relative;
+    font-size: 55px;
+    top: 45%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+
+}
+.ending{
+	height: 200px;
+	width: 100vw;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	background-color: #004e66;
+	color: #FDFBEE;
+}
+
+.blank {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}

@@ -1,0 +1,195 @@
+#highlight {
+    padding: 10vh;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 60px;
+}
+
+.slideanimate {
+    visibility: hidden;
+    margin-bottom: 3vh;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+body {
+    position: relative;
+}
+
+#nav {
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    z-index: 20;
+}
+
+#nav a {
+    height: 20vh;
+    background-color: #39465e38;
+    overflow-wrap: break-word;
+    border: none;
+    margin-top: 5px;
+}
+
+#nav a.active {
+    background-color: #39465e;
+    color:aliceblue;
+}
+
+p {
+    font-size: 20px;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.fadein {
+    opacity: 1;
+}
+
+#fullpage_1 {
+    background-image: url('../assets/fullpage_1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#color1{
+    width: 100%;
+}
+
+#color2{
+    width: 300px;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+#fullpage_2 {
+    background-image: url('../assets/fullpage_2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+sticky-top fadeout{
+    background-attachment: fixed;
+}
+
+#color3{
+    width: 250px;
+    margin-top: 50vh;
+}
+
+#pie1{
+    width: 35vw;
+}
+
+#pie2{
+    width: 35vw;
+    display: none;
+}
+
+.bardiv {
+        position: absolute;
+        height: 40px;
+        background-color: dodgerblue;
+        opacity: 0;
+        color: white;
+}
+
+mark{
+    display: inline-block; 
+    height: 0.75em;
+    line-height: 0.15;
+    background-color:  #83aeff;
+    padding: 0;
+    font-weight: bold;
+}
+
+mark-orange{
+    display: inline-block; 
+    height: 0.75em;
+    line-height: 0.15;
+    background-color:  rgb(219, 100, 84);
+    padding: 0;
+}
+
+#sketch5{
+    padding: 3vw;
+}
+#sketch1{
+    width:50vw;
+    margin-right:150px;
+}
+
+.arrow{
+    margin-top: 1vh;
+    height: 5vh;
+    width: 5vh;
+}
+
+.last{
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-position: center;
+    height: 50vh
+}
+
+.boxText{
+    position: relative;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold
+}
+
+.bardiv{
+    background-color: #253759;
+}
